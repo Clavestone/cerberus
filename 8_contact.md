@@ -26,7 +26,7 @@ To keep up to date with progress on the project, [register for email updates](ht
 
 * Setup ceremony
 * Receive a transaction
-* Send a transactionW
+* Send a transaction
 * Hardware wallet recovery
 * Hardware wallet replacement
 * Appendix
