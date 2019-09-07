@@ -2,6 +2,8 @@
 layout: default
 title: 2. Preparation
 nav_order: 2
+summary: This chapter will cover absolutely everything that is needed to prepare for the execution of the Setup Ceremony section of the Cerberus Protocol.
+image: /assets/cerberus_preparation.png
 ---
 
 IMPORTANT: This protocol is under development and not yet ready for use.
