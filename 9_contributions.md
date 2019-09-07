@@ -2,6 +2,8 @@
 layout: default
 title: Contributions
 nav_order: 9
+summary: How to contribute to the Cerberus Protocol.
+image: /assets/cerberus_title.png
 ---
 
 IMPORTANT: This protocol is under development and not yet ready for use.
