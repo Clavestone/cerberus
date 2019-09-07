@@ -2,6 +2,8 @@
 layout: default
 title: Contact
 nav_order: 8
+summary: How to get in touch with the team behind Cerberus.
+image: /assets/cerberus_title.png
 ---
 
 IMPORTANT: This protocol is under development and not yet ready for use.
