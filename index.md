@@ -2,6 +2,8 @@
 layout: default
 title: 1. Overview
 nav_order: 1
+summary: A step-by-step protocol for companies to securely store bitcoin investments without the need for a third-party custodian.
+image: /assets/cerberus_title.png
 ---
 
 IMPORTANT: This protocol is under development and not yet ready for use.
