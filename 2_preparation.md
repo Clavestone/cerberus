@@ -175,7 +175,7 @@ Order the items from the stores linked here. If delivery to your country is not 
 | - | - | - |
 | 100-pack of 9-by-12-inch tamper-evident deposit bags | 1 | [Amazon](https://www.amazon.com/dp/B000J05F06/ref=cm_sw_em_r_mt_dp_U_caLbDbNDPW9NS) |
 | 8-pack of fine-point Sharpies |  1 | [Amazon](https://www.amazon.com/Sharpie-Permanent-Markers-Fine-Pack/dp/B01MUR3GCC/) |
-| 4-pack of privacy screens | 1 | [Amazon](https://www.amazon.com/Pacon-Privacy-Boards-Black-48/dp/B007AH7158/) |
+| 4-pack of privacy boards | 1 | [Amazon](https://www.amazon.com/Pacon-Privacy-Boards-Black-48/dp/B007AH7158/) |
 
 | WARNING |
 | - |
@@ -234,7 +234,7 @@ Check off each item as they are received and do not unseal. Keep items together 
    * [ ] 1 x 100-pack of 9-by-12-inch tamper-evident deposit bags
    * [ ] 1 x 300-pack of heavy weight ruled lined index cards
    * [ ] 1 x 8-pack of fine point Sharpies
-   * [ ] 1 x Privacy screen
+   * [ ] 1 x 4-pack of privacy boards
 
 * **7.2. Double-check that each signatory has completed their tasks**
 
