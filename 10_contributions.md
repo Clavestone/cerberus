@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Contributions
-nav_order: 9
+nav_order: 10
 summary: How to contribute to the Cerberus Protocol.
 image: /assets/cerberus_title.png
 ---
