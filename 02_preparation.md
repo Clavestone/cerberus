@@ -88,7 +88,6 @@ Find a suitable safe deposit box provider conveniently located near to your home
    * A private vault provider
    * Each signatory using a different brand of vault provider
    * Accessible 24/7 including public and bank holidays
-   * Minimal KYC needed to open an account (privacy)
 
 **Examples of suitable safe deposit box providers**
 
