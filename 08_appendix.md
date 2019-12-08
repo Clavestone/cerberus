@@ -117,7 +117,7 @@ Some unique issues presented by the ownership-control split:
 
 Multisig storage helps mitigate these issues by giving no single agent direct control over the bitcoin. With multisig, multiple agents must coordinate together to spend the organisation's bitcoin. They can verify each others' actions, better ensuring that any transaction is in line with the organisation's goals.
 
-It should also be noted that for companies, the **[security versus convenience](23-security-versus-convenience)** issue is worse, because people at work are busy, and unlike bitcoin hobbyists, they don't have time or patience to deal with anything heavily technical. 
+It should also be noted that for companies, the **[security versus convenience](#23-security-versus-convenience)** issue is worse, because people at work are busy, and unlike bitcoin hobbyists, they don't have time or patience to deal with anything heavily technical. 
 
 Therefore it is especially important when it comes to corporate storage to eschew "absolute" security in favour of practical security.
 
