@@ -93,9 +93,9 @@ As a basic example of a tradeoff: a hardware wallet is physically more secure th
 The goal of building a secure bitcoin storage solution is to mitigate or outright eliminate the _largest risks_, and to ensure that there are checks and balances in place to detect and prevent potential compromises before they occur.
 
 ### 2.2. Technology & Processes
-Any secure bitcoin storage is achieved through a combination of both technology _and_ processes. As a simple example, a user should **always** remember to cross-check the send address on a hardware wallet display before confirming a transaction. An impenetrable, unhackable hardware wallet is still vulnerable if the person using it is careless. 
+Any secure bitcoin storage is achieved through a combination of both technology _and_ processes. As a simple example, a user should **always** remember to cross-check the send address on a hardware wallet display before confirming a transaction. An impenetrable, unhackable hardware wallet would still be vulnerable if the person using it was careless. 
 
-Sometimes technology can help enforce processes—e.g. by prompting users to make certain checks or preventing users from initiating various dangerous commands—but ultimately any good bitcoin storage will involve strict processes that are managed outside of the hardware and software.
+Sometimes technology can help enforce processes—e.g. by prompting users to make certain checks or preventing users from initiating dangerous commands—but ultimately any good bitcoin storage will involve strict processes that are enforced outside of the hardware and software.
 
 ### 2.3. Security Versus Convenience
 One of the key tradeoffs faced when building a bitcoin storage solution is between security and convenience.
@@ -104,7 +104,7 @@ When selecting a bitcoin storage solution, users are forced to make a series of 
 
 As a crude example, a user could set up a 14-of-15 multisig with two of the keys sent to a secret location on the moon. This would be very secure—no one would be spending the coins in a hurry—but this storage would be practically useless for most use cases.
 
-Herein lies a serious problem: the more secure a storage solution is, the less convenient it will be, the less people will use it, the more funds are put at risk. Therefore the Cerberus protocol favours practical security over "absolute" security.
+Herein lies a serious problem: the more secure a storage solution is, the less convenient it will be, the fewer people will use it, the more bitcoin are put at risk. Therefore the Cerberus Protocol favours practical security over "absolute" security.
 
 ### 2.4. Corporate Versus Personal
 Bitcoin storage for companies is fundamentally different in nature to bitcoin storage for individuals. With personal bitcoin self-storage, the owner is the same person that is in control of the bitcoin. But with corporate bitcoin storage ownership and control are split. The owning organisation _must_ entrust control of its bitcoin to one or more its agents (e.g. shareholders, board members, employees).
