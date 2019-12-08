@@ -288,8 +288,9 @@ Each of these pieces of data has no value on its own, but certain combinations c
 - Plus one of:
     - xpub belonging to the remaining key
 
-| NOTE: with a combination of physical access to device, sufficient technical proficiency, and specialised hardware, it is possible for someone to extract the keys from the hardware wallet without the PIN. |
+| NOTE |
 | - |
+| With a combination of physical access to device, sufficient technical proficiency, and specialised hardware, it is possible for someone to extract the keys from the hardware wallet without the PIN. |
 
 ### 3.2. The Cerberus Threat Model
 To deliver a convenient solution, Cerberus is built on a set of assumptions about the technology used and the people operating it. Cerberus is designed so that understanding these assumptions is not essential for the safe operation of the multisig storage. However, these assumptions should be considered threat vectors or risks, and it's better that they are made explicit for the purposes of community review.
@@ -391,15 +392,15 @@ Some people might wonder why we don't use Electrum's in-built "Cosigner Pool" fe
 ### 4.3. Why Trezor?
 It is important to point out that the Cerberus Protocol is not tied to any one hard wallet or manufacturer. Based on developments in the industry, and feedback from reviewers, we may choose to change the hardware wallet recommendation at a later date.
 
-Technically, Cerberus' focus is on the _procedures_ around organisational multisig management, therefore most hardware wallets should already be suitable to replace our current selection. However we'd recommend only the most expert of expert bitcoin users attempt this. For everyone else, we have made the selection of the Trezor One very carefully, taking into account security, usability, and historic track record. 
+Technically, Cerberus' focus is on the _procedures_ around organisational multisig management, therefore most hardware wallets should already be suitable to replace our current selection. However we'd recommend only the most expert of expert bitcoin users attempt this. For everyone else, we have made the selection of the Trezor One very carefully, taking into account security, usability, and track record. 
 
 | Hardware wallet | Pros | Cons | 
 | - | - | - |
 | Trezor One | Longest track record, exploits are well known; fully open source software _and_ hardware; very user-friendly; low-cost. | Known to be vulnerable to physical exploits; requires USB connection. |
 | Ledger Nano S | Long track record, most commonly-used wallet, exploits are well known; user-friendly post-setup; low-cost. | Support for multiple tokens diffuses security focus; requires USB connection; our own tests found setup to be unfriendly; encountered multiple small bugs when pairing with Electrum; doesn't support verification of multisig receive & change addresses on-device (offloading verification to the user and potentially-compromised laptops). |
-| Coldcard | Bitcoin-only support allows team to focus more resources on security; fully open source software _and_ hardware; [PSBT](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki#Abstract) support; on-device PIN entry; full air-gap support; seed self-generation support (e.g. with dice) reduces supply chain risk; low-cost. | Newer solution with fewer users so potential exploits less well known; looks more daunting to non-technical users; sold in batches meaning not always available. |
+| Coldcard | Bitcoin-only support allows team to focus more resources on security; open source software; [PSBT](https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki#Abstract) support; on-device PIN entry; full air-gap support; seed self-generation support (e.g. with dice) reduces supply chain risk; low-cost. | Newer solution with fewer users so potential exploits less well known; uses secure element which is not open source; looks more daunting to non-technical users; sold in batches meaning not always available. |
 
-For now we've settled on the Trezor One mainly thanks to its long track record of being a secure storage solution, and its simple and friendly user interface.
+For now we've settled on the Trezor One mainly thanks to its long track record of being a secure storage solution, its simple and friendly user interface, and the verifiability of the open source hardware and software.
 
 Growing list of hardware wallet alternatives with multisig support:
 - [BitBox](https://shiftcrypto.ch/)
@@ -407,8 +408,9 @@ Growing list of hardware wallet alternatives with multisig support:
 
 For anyone interested in diving deeper into comparing hardware wallets, we'd recommend [this comprehensive comparison resource from Michael Flaxman](https://bitcoin-hardware-wallet.github.io/) (Keepkey, Ledger Nano S, Trezor Model T, and ColdCard only for now).
 
-| NOTE: The protocol contributors do not receive any commissions or referrals from our hardware wallet recommendations, instead preferring Cerberus to remain independent.
+| NOTE |
 | - |
+| The protocol contributors do not receive any commissions or referrals from our hardware wallet recommendations, instead preferring Cerberus to remain independent. |
 
 ### 4.4. Why No Passphrases?
 _Coming soon._
