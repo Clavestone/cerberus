@@ -193,8 +193,8 @@ Instead, properly reducing people risk requires fighting fire with fire: real wo
 - encourage signatories to regularly pay attention to their own physical security
 
 ##### Categories of Threats to Bitcoin Holdings
-![](https://i.imgur.com/EfZeD5V.png)
-
+{: .no_toc }
+![Required Equipment](/assets/bitcoin_threats_venn.png)
 
 ### 2.6. Self-Storage Versus Custodial
 After a never-ending series of custodial failures, **individuals are already well aware that safe bitcoin storage means holding their own bitcoin keys**.
@@ -277,7 +277,7 @@ Understanding what combinations of data are required to spend in bitcoin multisi
 
 Each of these pieces of data has no value on its own, but certain combinations can be used to spend the organisation's bitcoin funds (either by an attacker or by the organisation itself in an emergency situation):
 
-![](https://i.imgur.com/irZvwvX.png)
+![Spending Conditions for 2-of-3](/assets/spending_conditions.png)
 
 **SPENDING REQUIRES:**
 - Any three of:
