@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Contact
-nav_order: 8
+nav_order: 9
 summary: How to get in touch with the team behind Cerberus.
 image: /assets/cerberus_title.png
 ---
