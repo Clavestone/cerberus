@@ -50,7 +50,7 @@ For that reason, the Appendix is very long. To help find what you're looking for
 - **[Guillaume Verbal](https://www.linkedin.com/in/guillaumeverbal/):** Founder of Coinwallet, China’s leading bitcoin hardware wallet reseller, and Bitcoin1212. Former lead developer of the ARK wallet.
 - **[Neil Woodfine](https://www.linkedin.com/in/nwoodfine/):** Working in the bitcoin industry since 2014, with experience at some of the leading bitcoin startups in exchange, payments, and infrastructure.
 
-We couldn't have completed Cerberus alone, and have received lots of valuable input from various people in the industry. For special thanks, see our **[Contributor section](https://cerberus.clavestone.io/10_contributions.html)**.
+We couldn't have completed Cerberus alone, and have received lots of valuable input from various people in the industry. For special thanks, see our **[Contributions section](https://cerberus.clavestone.io/10_contributions.html)**.
 
 ### 1.2. Project Origins
 
@@ -117,7 +117,7 @@ Some unique issues presented by the ownership-control split:
 
 Multisig storage helps mitigate these issues by giving no single agent direct control over the bitcoin. With multisig, multiple agents must coordinate together to spend the organisation's bitcoin. They can verify each others' actions, better ensuring that any transaction is in line with the organisation's goals.
 
-It should also be noted that for companies, the **[security versus convenience](#22-security-versus-convenience)** issue is worse, because people at work are busy, and unlike bitcoin hobbyists, they don't have time or patience to deal with anything heavily technical. 
+It should also be noted that for companies, the **[security versus convenience](23-security-versus-convenience)** issue is worse, because people at work are busy, and unlike bitcoin hobbyists, they don't have time or patience to deal with anything heavily technical. 
 
 Therefore it is especially important when it comes to corporate storage to eschew "absolute" security in favour of practical security.
 
@@ -144,7 +144,7 @@ An important distinction to note on external threats for corporate bitcoin holde
 1. **Signatories must take on personal liability and personal risk on behalf of the organisation:** Successful hacks or social engineering may lead to accusations of negligence. Physical theft, kidnapping, blackmail, and state interventions may pose physical risks to a signatory even though they do not directly own the funds. 
 2. **Agents are less incentivised to protect the funds than their own personal holdings:** At best, a signatory will have indirect, partial ownership of the bitcoin held by the organisation (e.g. a shareholder). There are many factors at play (e.g. relative ownership values), but in many cases it is likely that a signatory would go to less lengths to protect their organisation's bitcoin keys than they would to protect their own personal bitcoin keys—regardless of the individual's intergrity or how committed they are to their organisation.
 
-On first glance, the immediate conclusion might be that custodians would solve these issues. They do not. In many ways they make the problem worse by expanding the number of agents to the organisation that are under threat. See section **[2.5. Self-Storage Versus Custodial](#25-self-storage-versus-custodial)** for details.
+On first glance, the immediate conclusion might be that custodians would solve these issues. They do not. In many ways they make the problem worse by expanding the number of agents to the organisation that are under threat. See section **[2.6. Self-Storage Versus Custodial](#26-self-storage-versus-custodial)** for details.
 
 #### 2.5.2. Internal Threats
 {: .no_toc }
@@ -454,7 +454,7 @@ One risk of having a explicit signatory order is that it is potentially more eas
 ##### 5.2.1.3. Designate a “Master of Ceremony” (MC)
 {: .no_toc }
 
-See section 3.2.5. **["The MC is Trusted During the Ceremony"](#325-the-mc-is-trusted-during-the-ceremony)**.
+See section 3.2.4. **[The MC is Trusted During the Ceremony](#324-the-mc-is-trusted-during-the-ceremony)**.
 
 ***
 
