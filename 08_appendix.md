@@ -3,7 +3,7 @@ layout: default
 title: Appendix
 nav_order: 8
 summary: Background on the Cerberus Protocol, basic bitcoin security principles, and design notes on each of Cerberus' sections.
-image: /assets/key_wallet_data.png
+image: /assets/bitcoin_threats_venn.png
 ---
 
 IMPORTANT: This protocol is under development and not yet ready for use.
@@ -20,29 +20,26 @@ For that reason, the Appendix is very long. To help find what you're looking for
 ## Contents
 {: .no_toc }
 
-1. TOC
-{:toc}
-
 * 1: **[Cerberus Background](#1-cerberus-background)**
   * 1.1. [The Team Behind Cerberus](#11-the-team-behind-cerberus)
   * 1.2. [Project Origins](#12-project-origins)
-* 2: **[Basic Bitcoin Security Principles](#2-Basic-Bitcoin-Security-Principles)**
-  * 2.1. [There is No Perfect Security](#2-Basic-Bitcoin-Security-Principles)
-  * 2.2. [Technology & Processes](#22-Technology-&-Processes)
-  * 2.3. [Security Versus Convenience](#23-Security-Versus-Convenience)
-  * 2.4. [Corporate Versus Personal](#24-Corporate-Versus-Personal)
-  * 2.5. [Threats to Corporate Bitcoin Storage](#25-Threats-to-Corporate-Bitcoin-Storage)
-  * 2.6. [Self-Storage Versus Custodial](#26-Self-Storage-Versus-Custodial)
-* 3: **[The Cerberus Approach](#3-The-Cerberus-Approach)**
-  * 3.1. [Required to Spend](#31-Required-to-Spend)
-  * 3.2. [The Cerberus Threat Model](#32-The-Cerberus-Threat-Model)
+* 2: **[Basic Bitcoin Security Principles](#2-basic-bitcoin-security-principles)**
+  * 2.1. [There is No Perfect Security](#2-basic-bitcoin-security-principles)
+  * 2.2. [Technology & Processes](#22-technology-&-processes)
+  * 2.3. [Security Versus Convenience](#23-security-versus-convenience)
+  * 2.4. [Corporate Versus Personal](#24-corporate-versus-personal)
+  * 2.5. [Threats to Corporate Bitcoin Storage](#25-threats-to-corporate-bitcoin-storage)
+  * 2.6. [Self-Storage Versus Custodial](#26-self-storage-versus-custodial)
+* 3: **[The Cerberus Approach](#3-the-cerberus-approach)**
+  * 3.1. [Required to Spend](#31-required-to-spend)
+  * 3.2. [The Cerberus Threat Model](#32-the-cerberus-threat-model)
 * 4: **[FAQ](#4.-FAQ)**
-  * 4.1. [Why Bitcoin Only?](#41-Why-Bitcoin-Only?)
-  * 4.2. [Why Electrum?](#42-Why-Electrum?)
-  * 4.3. [Why Trezor](#43-Why-Trezor?)
-  * 4.4. [Why No Passphrases?](#44-Why-No-Passphrases?)
-* 5: **[Protocol Design & Risks](#5-Protocol-Design-&-Risks)**
-  * 5.2. [Preparation Notes](#52-Preparation-Notes)
+  * 4.1. [Why Bitcoin Only?](#41-why-bitcoin-only?)
+  * 4.2. [Why Electrum?](#42-why-electrum?)
+  * 4.3. [Why Trezor](#43-why-trezor?)
+  * 4.4. [Why No Passphrases?](#44-why-no-passphrases?)
+* 5: **[Protocol Design & Risks](#5-protocol-design-&-risks)**
+  * 5.2. [Preparation Notes](#52-preparation-notes)
   * 5.3. Ceremony Notes _(COMING SOON)_
 
 ## 1. Cerberus Background
@@ -194,7 +191,7 @@ Instead, properly reducing people risk requires fighting fire with fire: real wo
 
 ##### Categories of Threats to Bitcoin Holdings
 {: .no_toc }
-![Required Equipment](/assets/bitcoin_threats_venn.png)
+![Categories of Threats to Bitcoin Holdings](/assets/bitcoin_threats_venn.png)
 
 ### 2.6. Self-Storage Versus Custodial
 After a never-ending series of custodial failures, **individuals are already well aware that safe bitcoin storage means holding their own bitcoin keys**.
