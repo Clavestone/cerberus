@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Appendix
+title: 8. Appendix
 nav_order: 8
 summary: Background on the Cerberus Protocol, basic bitcoin security principles, and design notes on each of Cerberus' sections.
 image: /assets/bitcoin_threats_venn.png
