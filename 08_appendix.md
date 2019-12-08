@@ -84,7 +84,7 @@ We still believe in the strength of a multisig shared storage model. However, a 
 This section covers general principles behind bitcoin security as we see them, and is not specific to the Cerberus Protocol. These principles are what inform our approach to building the procedures around the Cerberus Protocol. 
 
 ### 2.1. There is No Perfect Security
-There is no bitcoin storage solution that can offer perfect, unbreakable security. For a determined enough attacker under the right circumstances, any storage has vulnerabilites that can be breached. 
+There is no bitcoin storage solution that can offer perfect, unbreakable security. For a determined-enough attacker under the right circumstances, any storage has vulnerabilities that can be breached. 
 
 Some solutions are more vulnerable than others, but all approaches to bitcoin storage involve a variety of tradeoffs. Improving security against one threat can sometimes decrease security against another. A custodian does not solve this problem, and in many ways makes the problem worse, as we will discuss below. 
 
