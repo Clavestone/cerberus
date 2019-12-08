@@ -11,12 +11,14 @@ IMPORTANT: This protocol is under development and not yet ready for use.
 
 Appendix
 ========
+{: .no_toc }
 
 The Appendix is where we store all of our more in-depth information on the Cerberus Protocol. While the main protocol sections are designed to be lean and streamlined, giving users only the most essential information to get their secure storage operational quickly, the Appendix is the opposite. It's wordy. It's where we go out of our way to provide excess detail on our design decisions.
 
 For that reason, the Appendix is very long. To help find what you're looking for check out the contents below or try the search function in the top bar.
 
 ## Contents
+{: .no_toc }
 
 1. TOC
 {:toc}
@@ -56,11 +58,13 @@ We couldn't have completed Cerberus alone, and have received lots of valuable in
 ### 1.2. Project Origins
 
 #### The Setup
+{: .no_toc }
 Cerberus emerged from a commercial project to build a Bitcoin storage solution for institutions. As firm believers in the importance of bitcoin investors holding their own keys, our team wanted to provide an easy way for businesses to set up multisig storage where they held control of their bitcoin. 
 
 We recognised that most companies today are not yet familiar with cryptography or bitcoin, and so are potentially not equipped with the necessary expertise to manage their security correctly. Also, companies face unique challenges, such as changes in staff and the threat of inside jobs, which require a unique approach compared to personal storage.
 
 #### The Response
+{: .no_toc }
 To solve these problems we built a prototype of a "shared storage" solution inspired by a couple of sources:
 1) Daniel Krawisz's article on [Bitcoin's Rugged Individualism](https://nakamotoinstitute.org/mempool/bitcoins-rugged-individualism/);
 2) Andreas Antonopolous's [presentation at the Canadian Senate hearing](https://www.youtube.com/watch?v=xUNGFZDO8mM): _"...there are also models that are a hybrid, where a bank may have a signatory role, but is not able to change the direction of the funds. They would simply approve transactions._
@@ -68,9 +72,11 @@ To solve these problems we built a prototype of a "shared storage" solution insp
 In our shared storage model, bitcoin multisig keys are spread across two organisations—the owning organisation and a professional "authenticator". To release a transaction, multiple keys from both organisations are required to sign. Thus the owner can rest easy knowing the authenticator can never spend the funds on its own, while they defend against potential compromises at the owning organisation. 
 
 #### The Complication
+{: .no_toc }
 However, during our trials with interested parties, we realised we were trying to achieve too much too soon, and that the world is maybe not quite ready for such a complex storage product. We decided to get back to basics.
 
 #### The Resolution
+{: .no_toc }
 So we hit upon the idea of simplifying our system as much as possible, removing the second "authoriser" organisation, moving to the familiar 2-of-3 multisig configuration, and releasing an open source guide in the vein of the [Glacier Protocol](https://glacierprotocol.org/).
 
 We still believe in the strength of a multisig shared storage model. However, a 2-of-3 multisig enforced with strict, well-defined setup and payment processes is already significantly more secure than the self-storage deployed by most bitcoin-holding companies today, and infinitely better than custodial solutions.
@@ -124,6 +130,7 @@ Corporate bitcoin storage faces a variety of threats that could result in partia
 We have tried to categorise the threats here, but note that it is not exhaustive and many of the categories have some overlap:
 
 #### 2.5.1. External Threats
+{: .no_toc }
 External threats are posed by individuals or groups external to the owning organisation.
 
 | Type | Description | Examples |
@@ -143,6 +150,7 @@ An important distinction to note on external threats for corporate bitcoin holde
 On first glance, the immediate conclusion might be that custodians would solve these issues. They do not. In many ways they make the problem worse by expanding the number of agents to the organisation that are under threat. See section [2.5. Self-Storage Versus Custodial](#2.5.-Self-Storage-Versus-Custodial) for details.
 
 #### 2.5.2. Internal Threats
+{: .no_toc }
 Internal threats are posed by individuals working for the owning organisation.
 
 | Type | Description | Examples |
@@ -164,7 +172,8 @@ Of all the internal threats, **inside jobs** are particularly pernicious because
 
 Inside jobs in corporate bitcoin storage come with signficant _plausible deniability_.
 
-#### 2.5.3. People Risk  
+#### 2.5.3. People Risk
+{: .no_toc }
 By far the biggest threat to bitcoin storage security (or information security in general) is _people_. In contrast to the mechanical nature of software and hardware, people are complex, unpredictable, and have many vulnerabilities. The "wetware" is where most things go wrong.
 
 This can be seen in the above threats, of which only hacks, supply chain attacks, and state interventions fall outside of the "human risk" category. Broadly, we're talking about:
@@ -197,17 +206,20 @@ Bitcoin is liquid, borderless, and very difficult for law enforcement agencies t
 While high-profile hacks have been limited to cryptocurrency exchanges and individuals now, it is likely that we are going to see some compromises of previously respectable custodians over the next decade. This including ETFs and other bitcoin investment vehicles. Bitcoin insurance is limited as-is, and will become increasingly inadequate as the value of bitcoin grows.
 
 #### 2.6.1. Custodians Are Not Safer
+{: .no_toc }
 With so many threats posed to an organisation's bitcoin holdings, it may seem at first glance that it's a lot safer and easier to go with a custodian. However, using a custodian poses a new set of problems:
 1. **Threats redirected:** It does not eliminate any of the internal or external threats. Instead, it simply shifts them to a third-party. 
 2. **Targets multiplied:** For many of the threats, it doubles the number of parties exposed to them—both the custodian *and the owner* can be compromised.
 3. **Increased Risks:** Professional custodians represent centralised targets with high concentrations of funds—optimal targets for external threats and inside jobs.
 
 #### 2.6.2. Threats Redirected
+{: .no_toc }
 A custodian faces the exact same set of internal and external threats as an organisation holding their own bitcoin keys. For example, signatories at the custodian can engage in inside jobs, make mistakes, or be targeted by thieves, the same as any signatory at the owning organisation.
 
 Due to the funds held under management by a custodian not belonging to the custodian, they have less skin in the game. Faced by certain threats such as blackmail or a state intervention, they may be less inclined to act in the owners' interests.
 
 #### 2.6.3. Targets Multiplied
+{: .no_toc }
 The threats are not only shifted to the custodian's signatories. A custodian must provide permissions to one or more agents at the owning organisation to make transactions under certain conditions.
 
 The procedures around confirming transactions can help mitigate some threats, but the owning organisation's agents are ultimately able to direct the custodian's signatories to make irreversable, difficult-to-trace transactions on their behalf.
@@ -217,6 +229,7 @@ These agents can still be targetted by hacks, social engineering, kidnapping, an
 In summary, by using a custodian, not only can the custodian's signatories be compromised, but the owner's agents can be too, increasing the storage's attack surface.
 
 #### 2.6.4. Increased Risks
+{: .no_toc }
 As can be seen from the long history of bitcoin exchange hacks, custodians are prime targets for malicious actors. Successful custodians (and who would want to select an unsuccessful custodian?) hold enormous amounts of bitcoin under management.
 
 Compromising secure multisig bitcoin storage involved serious planning and risk, so custodians represent a better use of time for would-be attackers—they get a much higher ROI on their efforts. Furthermore, custodians are typically high-profile organisations, thus attracting more attempts at compromising their holdings.
@@ -224,6 +237,7 @@ Compromising secure multisig bitcoin storage involved serious planning and risk,
 With an increased concentration of funds also comes a greater temptation for the custodian's signatories to commit an inside job. And remember—inside jobs in bitcoin [come with plenty of plausible deniability](#2.4.2.-Internal-threats).
 
 #### 2.6.5. Where Custodians Might Help
+{: .no_toc }
 Custodians can provide convenience by taking over the responsibilities software management, hardware management, and transactional procedures. Setup and transactions can be completed much faster, with a phone call for example.
 **But it comes at the cost of security**, as described above.
 
@@ -232,6 +246,7 @@ Compared to an inexperienced team hastily deploying bitcoin storage on an online
 This is where Cerberus comes in. It provides simple directions for teams to set up and manage their own secure corporate bitcoin storage, with no experience required.
 
 #### 2.6.6. Storage Portfolios
+{: .no_toc }
 In the cryptocurrency industry it's common to hear that "coin portfolios" are a great way to hedge risk. This is questionable at best, because cryptocurrencies are typically mostly correlated with each other (and [altcoins have problems of their own](https://nakamotoinstitute.org/mempool/the-problem-with-altcoins/)).
 
 The real "hedged risk" portfolio strategy in bitcoin is storage portfolios. As simple as "don't put all your eggs in one basket."
@@ -241,6 +256,7 @@ Spreading bitcoin across two or more storage methods is a generally a good idea 
 A custodian could be justified in a storage portfolio, but it is recommended to keep a minority of holdings with the custodian, given the risks posed by fund centralisation.
 
 #### 2.6.7. Delegation of Responsibility
+{: .no_toc }
 One of the biggest drivers behind companies selecting bitcoin custodians is the tendency for employees to prefer delegating responsibility. They don't want to get blamed if something goes wrong.
 
 This is in stark contrast to individual bitcoin holders, who take more responsibility for their wealth and typically opt for self-storage options.
@@ -281,7 +297,8 @@ Each of these pieces of data has no value on its own, but certain combinations c
 ### 3.2. The Cerberus Threat Model
 To deliver a convenient solution, Cerberus is built on a set of assumptions about the technology used and the people operating it. Cerberus is designed so that understanding these assumptions is not essential for the safe operation of the multisig storage. However, these assumptions should be considered threat vectors or risks, and it's better that they are made explicit for the purposes of community review.
 
-#### 3.2.1. Recipient Address Accuracy 
+#### 3.2.1. Recipient Address Accuracy
+{: .no_toc }
 Regardless of how well you secure your stored funds from external and internal thefts, if you send a payment or receive a payment to the wrong address, your funds are still lost.
 
 Currently there are no commonly used methods for verifying that a bitcoin address belongs to a certain entity.
@@ -295,6 +312,7 @@ But, ultimately, there is little that can be done about a compromised agent work
 - Minimise the number of transactions your business makes
 
 #### 3.2.2. Security Over Privacy
+{: .no_toc }
 The Cerberus protocal prioritises security over privacy. 
 
 While there are some great privacy-enhancing technologies emerging in the bitcoin industry, and privacy is tangential to security, the existing solutions available would introduce too much complexity to the protocol.
@@ -306,6 +324,7 @@ As soon as privacy solutions are significantly improved, we will be more than ha
 A non-exhaustive list of privacy compromises are outlined here:
 
 ##### Multisig visibility
+{: .no_toc }
 Cerberus uses a multisig wallet to provide superior security compared to single key storage solutions. However, few wallets today use multisig, and when a bitcoin transaction is made from a multisig wallet, the parameters of the wallet are revealed on the blockchain:
 1. The number of signatories in the wallet
 2. The signature format specific to the wallet used
@@ -321,6 +340,7 @@ Thankfully, Cerberus uses one of the most-used multisig formats (2-of-3) generat
 Still, multisig transactions are more unusual than single signature transactions, and provide more potential identifiers for third parties monitoring financial activity on the bitcoin network.
 
 #### 3.2.3. Assume Compromise After Physical Access
+{: .no_toc }
 If anyone other than the signatory gains physical access to a hardware wallet—e.g. in a theft or after losing one for period of time before getting it back—the key should be considered compromised. 
 
 Online, there are numerous accounts of white hat hackers accessing the keys contained within hardware wallets within only a few minutes of access to the device. These vulnerabilities typically get patched very quick, require  significant technical knowledge to achieve and dedicated hardware. However, with large values of bitcoin at stake, better to be safe than sorry.
@@ -330,6 +350,7 @@ Multisig significantly mitigates this threat, as any attacker would require prol
 After discovering that a third party gained or may have gained physical access to one of the hardware wallets, signatories should immediately make efforts to move the stored coins to a new multisig wallet according to the key replacement section of the protocol.
 
 #### 3.2.4. The MC is Trusted During the Ceremony
+{: .no_toc }
 To ensure reliable execution of the setup section of the protocol, we came to the conclusion that it was necessary for one person to lead the setup ceremony. Each signatory needs to know what to do and when, and it would be difficult to coordinate this with each signatory reading from the protocol independently.
 
 Also, people tend to be extremely busy at work, and we decided that expecting all three signatories to closely familiarise themselves with the protocal may be a bridge to far.
@@ -347,6 +368,7 @@ While we suggest that the MC is assumed to be trusted during the ceremony, Cerbe
 Another option to improve security would be to introduce an independent observer, e.g. a lawyer or notary, to observe the setup ceremony. The independent observer should have also familiarised themselves with the protocol to verify that procedures are being followed correctly. The reason why we have not made this a part of the protocal is that it introduces an extra layer of complexity that provides a marginal increase in security.
 
 #### 3.2.5. Supply Chain is Trusted
+{: .no_toc }
 _Coming soon._
 
 ***
@@ -406,8 +428,10 @@ The notes are numbered according to the section headers in the main protocol, pr
 ### 5.2. Preparation Notes
 
 #### 5.2.1. Assembling the team
+{: .no_toc }
 
 ##### 5.2.1.1. Select the signatories
+{: .no_toc }
 The Cerberus protocal uses a 2-of-3 multisignature Bitcoin wallet. This means that any two of three keys need to sign a transaction before it can be executed. Each signatory should only hold one key. If any signatory holds more than one key, the multisignature setup has little to no value, because that signatory has the power to make transactions without the confirmation from anybody else.
 
 Likewise, each key should only be held by one individual. Giving multiple signatories access to one key would:
@@ -417,6 +441,7 @@ Likewise, each key should only be held by one individual. Giving multiple signat
 When selecting the signatories, the more skin in the game each signatory holds with the organisation, the better. The signatories need to deeply care about the security of the bitcoin held by the organisation so that they strictly stick to the protocol.
 
 ##### 5.2.1.2. Assign a number to each signatory
+{: .no_toc }
 Originally we considered having the protocol executed on a more ad-hoc basis, with any signatory allowed to initiate a transaction, and any other signatory allowed to pick up the transaction, confirm, sign and broadcast.
 
 However, we realised that unless each signatory knows exactly what they should be doing at all times, then the ambiguity will lead to a) time consuming discussion and coordination with fellow signatories, and b) more room for errors to be made.
@@ -430,12 +455,14 @@ Of course, technically any signatory can initiate and confirm a transaction, but
 One risk of having a explicit signatory order is that it is potentially more easily socially engineered. It is therefore of the utmost importance that Signatories 2 and 3 diligently perform their transaction verification duties and do not automatically sign transactions issued by Signatory 1. 
 
 ##### 5.2.1.3. Designate a “Master of Ceremony” (MC)
+{: .no_toc }
 
 See [section 3.2.5. "The MC is Trusted During the Ceremony"](#3.2.5.-The-MC-is-Trusted-During-the-Ceremony).
 
 ***
 
 #### 5.2.2. Print Out The Cerberus Protocol
+{: .no_toc }
 
 Although following the protocol on a screen may seem more convenient, having a physical copy allows tasks to be ticked off with a pen to create a persistent record of progress, making it less likely for signatories to lose their place or make mistakes.
 
@@ -461,14 +488,17 @@ Instead, we have taken the following measures to increase the security of the pr
 8) Each signatory prints their own copy of the protocol, and follows it in parallel with the MC's instructions during the Setup Ceremony. This way, any man in the middle attacks would need to target all three signatories, otherwise inconsistencies will be spotted during the execution of the protocol at which point the process can be terminated.
 
 ##### 5.2.2.1 Print out the Preparation section
+{: .no_toc }
 
 N/A
 
 ##### 5.2.2.2. Print out the Setup Ceremony Section
+{: .no_toc }
 
 N/A
 
 ##### 5.2.2.3. Store the printed documents in a secure location
+{: .no_toc }
 
 An attacker could switch the printed documents for compromised documents before the execution of the Setup Ceremony, hence the need to store them in a secure location.
 
@@ -477,12 +507,14 @@ Again, by having three independent sets of documents, held in different location
 The biggest threat here is inside jobs—either by fellow signatories, or colleagues—hence the recommendation to store at home rather than the office, ensuring all the documents are held in separate, harder-to-get-to locations.
 
 ##### 5.2.2.4. Use the printed version from now on
+{: .no_toc }
 
 N/A
 
 ***
 
 #### 5.2.3. Preparing Secure Physical Storage
+{: .no_toc }
 Bitcoin storage needs backups, in the form of seed phrases, in case of hardware wallet loss/damage/malfunction.
 
 While "seedless" solutions from companies like [Casa](casa.keys) are certainly attractive, reducing the number of pieces of sensitive data that needs to be protected, they rely on larger sets of multisig keys (e.g. Casa uses 3-of-5) which provides sufficient redundancy in case of multiple key losses.
@@ -492,15 +524,18 @@ Cerberus is based on 2-of-3, which leaves little wiggle room. And personally, we
 Each signatory in the Cerberus multisig already carries the burden of storing and protecting a hardware wallet, and usually would not have a second suitable location to store another piece of data. Therefore the decision was taken to outsource this to professional secure storage parties.
 
 ##### 5.2.3.1. Identify a safe deposit box provider
+{: .no_toc }
 
 Safe deposit box providers have long histories of protecting people's valuables but are not infallible. In times of political and economic turbulence, there are examples of these kinds of institutions being compelled to confiscate deposit box owners' property on behalf of the government, or just simply mismanaging the contents themselves. Therefore we have recommended certain criteria to mitigate the risks these third parties pose to the bitcoin storage:
 
 ###### Each signatory should use a different provider
+{: .no_toc }
 By keeping each seed phrase with a different provider, all three of the providers need to collude to gain access to the bitcoin. To mitigate against this risk even further:
 1) Signatories sign up for each deposit box under personal accounts, to make it more difficult for anyone to connect the accounts at different providers together.
 2) Each seed phrase is protected by a further level of security in the form of a passphrase, which ensures that anyone that does gain access to the contents of all three of the deposit boxes cannot immediately spend the funds.
   
 ###### A private vault provider
+{: .no_toc }
 A key advantage of the private vault provider over a bank is that it is more difficult for governments to:
 - Seize the contents—private vaults tend to have stronger protections than the hyper-compliant banking sector.
 - Block access to safe deposit boxes—e.g. by declaring a bank holiday.
@@ -511,16 +546,19 @@ That said, we recognise that many companies using the Cerberus protocol may not 
 It should be noted that while an attacker who gains access to all three of the seed phrases can reconstruct the wallet and gain access to the bitcoin, this does does not mean that the funds are necessarily gone. Signatories should still have access to the private keys in the form of hardware wallets. If at any time it becomes apparent that deposit boxes are being compromised, the signatories can take emergency action to move the funds to a new wallet constructed from new private keys which the seed phrases at the deposit boxex do not have access to.
 
 ###### Accessible 24/7 including public and bank holidays
+{: .no_toc }
 Private vaults often provide their client 24/7 access to their safe deposit box, unlike banks which will normally only provide limited access during banking hours, with advance notice often being a requirement.
 
 In case of emergency, ideally you want to know you will always have access to the seed phrase.
 
 ##### 5.2.3.2. Book the safe deposit box
+{: .no_toc }
 Safe deposit boxes should be booked personally under each signatory's own name for two key reasons:
 1. To ensure only one person has access to the safe deposit box. If the boxes were registered under the organisation, then numerous other members of staff—including fellow signatories—could potentially collect all three seed phrase backups without requiring the help of each individual signatory.
 2. To obfuscate the relationship between the three deposit boxes. Registering them under separate names will make it more difficult for safe deposit box providers to "connect the dots" and collaborate to seize the funds (for whatever reason).
 
 ##### 5.2.3.3. Prepare home storage for hardware wallet**
+{: .no_toc }
 
 Hardware wallets must be:
 1. Stored separately from each other: otherwise an attacker that compromises a single location can gain access to the bitcoin funds;
@@ -539,21 +577,22 @@ Nevertheless, the signatories should fully understand and accept the responsibil
 ***
 
 #### 5.2.4. Preparing the Laptops and Software
+{: .no_toc }
   
 ##### 5.2.4.1. Prepare laptop computers
-
+{: .no_toc }
 We considered providing support for Linux, but ultimately decided that the vast, vast majority of business users will be working on Windows and macOS devices. Each additional operating system expands the guide considerably, so we opted against the Linux addition. If the protocol proves popular and there is demand for Linux support, then either we or the community can submit some updates.
 
 ##### 5.2.4.2. Download Electrum
-
+{: .no_toc }
 See the **[Why Electrum?](#why-electrum?)** section.
 
 ##### 5.2.4.3. Install Electrum**
-
+{: .no_toc }
 N/A
 
 ##### 5.2.4.4. Verify the Electrum installation**
-
+{: .no_toc }
 This is easily the most technical part of the protocol, and may be daunting to many non-technical business users. To avoid this we looked at various different approaches that would avoid this requirement, but ultimately they all involved too much risk.
 
 There is huge financial incentive for malicious hackers to compromise Electrum downloads, delivering compromised wallet software to users around the world. There are many possible ways for hackers to achieve this, and they are typically very creative, motivated people.
@@ -565,19 +604,20 @@ We've tried to make our verification guides as clear as possible, without taking
 If anyone is struggling with this section, we would recommend getting together with the other signatories, so that you can go through the process while helping each other.
     
 ##### 5.2.4.5. Prepare the hardware
-
+{: .no_toc }
 N/A
 
 ***
 
 #### 5.2.5. Acquiring the Equipment
+{: .no_toc }
 
 ##### 5.2.5.1. Hardware wallet purchases
-
+{: .no_toc }
 See the **[Why Trezor?](#why-trezor)** section.
 
 ##### 5.2.5.2. Amazon purchases
-
+{: .no_toc }
 - **Tamper-evident deposit bags:** used to store the seed phrases and seed generation. Signatories need to know if the seed phrase has been tampered with when they inspect the package at the safe deposit box.
 - **Fine-point Sharpies:** Technically any pen will do, but who has some pens lying about in the office these days? Also the soft nibs of the Sharpies insure no impressions will be made on the surface below the seed phrase cards.
 - **Privacy screens:** Only one is required to prevent other signatories observing the recording of the seed phrase during the setup ceremony, but these are always sold in multi-packs.
@@ -587,9 +627,11 @@ These items should remain sealed in their original packaging until the day of th
 ***
 
 #### 5.2.6. Scheduling the Ceremony
+{: .no_toc }
 The key generation that takes place during the setup ceremony is the most sensitive part of the Cerberus protocol, hence the need to formalise the process.
 
 ##### 5.2.6.1. Identify a suitable venue
+{: .no_toc }
 Why we recommend certain features of the setup ceremony venue:
 * **A table for least five people:** sufficient space for three signatories plus a setup station and equipment.  
 * **At least one wall with no windows or glass walls:** You want to avoid the chance of anyone peering in over the shoulders of signatories as they generate their keys and record the seed phrase.  
@@ -603,26 +645,27 @@ We recommend keeping the purpose of the booking secret to minimise the chances t
 2) a third party learns of the ceremony and takes steps to compromise the room in advance of the ceremony taking place (e.g. installing a hidden camera).
 
 ##### 5.2.6.2. Establish a suitable time and date
-
+{: .no_toc }
 Yes, the ceremony may take five hours. We expect it can be done much faster if everyone is properly prepared and has already run through the protocol, but signatories should be prepared for longer in case something goes wrong and need to be repeated.
 
 ##### 5.2.6.3. Book the venue
-
+{: .no_toc }
 N/A
 
 ##### 5.2.6.4. Invite the signatories
-
+{: .no_toc }
 N/A
 
 ***
 
 #### 5.2.7. Preparation Checks
+{: .no_toc }
 
 ##### 5.2.7.1. Confirm receipt of online purchases**
-
+{: .no_toc }
 N/A
 
 ##### 5.2.7.2. Double-check that each signatory has completed their tasks**
-
+{: .no_toc }
 N/A
 
