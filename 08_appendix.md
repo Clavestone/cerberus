@@ -50,7 +50,7 @@ For that reason, the Appendix is very long. To help find what you're looking for
 - **[Guillaume Verbal](https://www.linkedin.com/in/guillaumeverbal/):** Founder of Coinwallet, China’s leading bitcoin hardware wallet reseller, and Bitcoin1212. Former lead developer of the ARK wallet.
 - **[Neil Woodfine](https://www.linkedin.com/in/nwoodfine/):** Working in the bitcoin industry since 2014, with experience at some of the leading bitcoin startups in exchange, payments, and infrastructure.
 
-We couldn't have completed Cerberus alone, and have received lots of valuable input from various people in the industry. For special thanks, see our [Contributor section](https://cerberus.clavestone.io/9_contributions.html).
+We couldn't have completed Cerberus alone, and have received lots of valuable input from various people in the industry. For special thanks, see our **[Contributor section](https://cerberus.clavestone.io/10_contributions.html)**.
 
 ### 1.2. Project Origins
 
@@ -117,7 +117,7 @@ Some unique issues presented by the ownership-control split:
 
 Multisig storage helps mitigate these issues by giving no single agent direct control over the bitcoin. With multisig, multiple agents must coordinate together to spend the organisation's bitcoin. They can verify each others' actions, better ensuring that any transaction is in line with the organisation's goals.
 
-It should also be noted that for companies, the [security versus convenience](#2.2.-Security-Versus-Convenience) issue is worse, because people at work are busy, and unlike bitcoin hobbyists, they don't have time or patience to deal with anything heavily technical. 
+It should also be noted that for companies, the **[security versus convenience](#22-security-versus-convenience)** issue is worse, because people at work are busy, and unlike bitcoin hobbyists, they don't have time or patience to deal with anything heavily technical. 
 
 Therefore it is especially important when it comes to corporate storage to eschew "absolute" security in favour of practical security.
 
@@ -144,7 +144,7 @@ An important distinction to note on external threats for corporate bitcoin holde
 1. **Signatories must take on personal liability and personal risk on behalf of the organisation:** Successful hacks or social engineering may lead to accusations of negligence. Physical theft, kidnapping, blackmail, and state interventions may pose physical risks to a signatory even though they do not directly own the funds. 
 2. **Agents are less incentivised to protect the funds than their own personal holdings:** At best, a signatory will have indirect, partial ownership of the bitcoin held by the organisation (e.g. a shareholder). There are many factors at play (e.g. relative ownership values), but in many cases it is likely that a signatory would go to less lengths to protect their organisation's bitcoin keys than they would to protect their own personal bitcoin keys—regardless of the individual's intergrity or how committed they are to their organisation.
 
-On first glance, the immediate conclusion might be that custodians would solve these issues. They do not. In many ways they make the problem worse by expanding the number of agents to the organisation that are under threat. See section [2.5. Self-Storage Versus Custodial](#2.5.-Self-Storage-Versus-Custodial) for details.
+On first glance, the immediate conclusion might be that custodians would solve these issues. They do not. In many ways they make the problem worse by expanding the number of agents to the organisation that are under threat. See section **[2.5. Self-Storage Versus Custodial](#25-self-storage-versus-custodial)** for details.
 
 #### 2.5.2. Internal Threats
 {: .no_toc }
@@ -342,7 +342,7 @@ If anyone other than the signatory gains physical access to a hardware wallet—
 
 Online, there are numerous accounts of white hat hackers accessing the keys contained within hardware wallets within only a few minutes of access to the device. These vulnerabilities typically get patched very quick, require  significant technical knowledge to achieve and dedicated hardware. However, with large values of bitcoin at stake, better to be safe than sorry.
 
-Multisig significantly mitigates this threat, as any attacker would require prolonged access to at least two devices (and a third key or xpub—see **[Required to Spend](#3.1.-Required-to-Spend)**) to be able to spend any coins.
+Multisig significantly mitigates this threat, as any attacker would require prolonged access to at least two devices (and a third key or xpub—see **[Required to Spend](#31-required-to-spend)**) to be able to spend any coins.
 
 After discovering that a third party gained or may have gained physical access to one of the hardware wallets, signatories should immediately make efforts to move the stored coins to a new multisig wallet according to the key replacement section of the protocol.
 
@@ -384,7 +384,7 @@ Electrum is quite simply the best solution for building custom multisig self-sto
 
 The only other open source wallet we are aware of that provides custom multisig features is Copay, but this software has been languishing the past few years and is now an inferior solution.
 
-The main downside of using Electrum is the privacy implications of connecting to random Electrum servers. For discussion on this, see the **[Security Over Privacy](#3.2.2.-Security-Over-Privacy)** section.
+The main downside of using Electrum is the privacy implications of connecting to random Electrum servers. For discussion on this, see the **[Security Over Privacy](#322-security-over-privacy)** section.
 
 Some people might wonder why we don't use Electrum's in-built "Cosigner Pool" feature in Cerberus—it appears to be an undersupported feature and extremely buggy, and we eventually gave up trying to force it to work!   
 
@@ -454,7 +454,7 @@ One risk of having a explicit signatory order is that it is potentially more eas
 ##### 5.2.1.3. Designate a “Master of Ceremony” (MC)
 {: .no_toc }
 
-See [section 3.2.5. "The MC is Trusted During the Ceremony"](#3.2.5.-The-MC-is-Trusted-During-the-Ceremony).
+See section 3.2.5. **["The MC is Trusted During the Ceremony"](#325-the-mc-is-trusted-during-the-ceremony)**.
 
 ***
 
@@ -567,7 +567,7 @@ The hardware wallets also need to be sufficiently convenient to access that the 
 
 Therefore we recommend that signatories hold the hardware wallets at home in secure storage, i.e. under lock and key. Not everyone has a home safe, and cheap home safes are little better than a locked cupboard in terms of keeping determined thieves out. Requiring that all three signatories purchase a professional home safe significantly increases the cost of executing the protocol, and would reduce usage. Furthermore, there is also some small security benefits to making the location of the hardware wallet less obvious.
 
-The multisig configuration of Cerberus bitcoin storage ensures that the bitcoin funds are still very safe when stored at home. Any thieves would have to compromise at least two, and probably _all three_ of the storage locations, plus PINs, plus passphrases (see the **[Required to Spend](#required-to-spend)** section) to gain access to the organisation's bitcoin funds.
+The multisig configuration of Cerberus bitcoin storage ensures that the bitcoin funds are still very safe when stored at home. Any thieves would have to compromise at least two, and probably _all three_ of the storage locations, plus PINs, plus passphrases (see the **[Required to Spend](#31-required-to-spend)** section) to gain access to the organisation's bitcoin funds.
 
 Nevertheless, the signatories should fully understand and accept the responsibility they are undertaking by placing such valuable data in their own homes.
 
@@ -582,7 +582,7 @@ We considered providing support for Linux, but ultimately decided that the vast,
 
 ##### 5.2.4.2. Download Electrum
 {: .no_toc }
-See the **[Why Electrum?](#why-electrum?)** section.
+See the **[Why Electrum?](#42-why-electrum)** section.
 
 ##### 5.2.4.3. Install Electrum**
 {: .no_toc }
@@ -611,7 +611,7 @@ N/A
 
 ##### 5.2.5.1. Hardware wallet purchases
 {: .no_toc }
-See the **[Why Trezor?](#why-trezor)** section.
+See the **[Why Trezor?](#43-why-trezor)** section.
 
 ##### 5.2.5.2. Amazon purchases
 {: .no_toc }
