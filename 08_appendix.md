@@ -20,12 +20,15 @@ For that reason, the Appendix is very long. To help find what you're looking for
 ## Contents
 {: .no_toc }
 
+1. TOC
+{: toc}
+
 * 1: **[Cerberus Background](#1-cerberus-background)**
   * 1.1. [The Team Behind Cerberus](#11-the-team-behind-cerberus)
   * 1.2. [Project Origins](#12-project-origins)
 * 2: **[Basic Bitcoin Security Principles](#2-basic-bitcoin-security-principles)**
   * 2.1. [There is No Perfect Security](#2-basic-bitcoin-security-principles)
-  * 2.2. [Technology & Processes](#22-technology-&-processes)
+  * 2.2. [Technology & Processes](#22-technology-processes)
   * 2.3. [Security Versus Convenience](#23-security-versus-convenience)
   * 2.4. [Corporate Versus Personal](#24-corporate-versus-personal)
   * 2.5. [Threats to Corporate Bitcoin Storage](#25-threats-to-corporate-bitcoin-storage)
@@ -34,11 +37,11 @@ For that reason, the Appendix is very long. To help find what you're looking for
   * 3.1. [Required to Spend](#31-required-to-spend)
   * 3.2. [The Cerberus Threat Model](#32-the-cerberus-threat-model)
 * 4: **[FAQ](#4.-FAQ)**
-  * 4.1. [Why Bitcoin Only?](#41-why-bitcoin-only?)
-  * 4.2. [Why Electrum?](#42-why-electrum?)
-  * 4.3. [Why Trezor](#43-why-trezor?)
-  * 4.4. [Why No Passphrases?](#44-why-no-passphrases?)
-* 5: **[Protocol Design & Risks](#5-protocol-design-&-risks)**
+  * 4.1. [Why Bitcoin Only?](#41-why-bitcoin-only)
+  * 4.2. [Why Electrum?](#42-why-electrum)
+  * 4.3. [Why Trezor?](#43-why-trezor)
+  * 4.4. [Why No Passphrases?](#44-why-no-passphrases)
+* 5: **[Protocol Design & Risks](#5-protocol-design--risks)**
   * 5.2. [Preparation Notes](#52-preparation-notes)
   * 5.3. Ceremony Notes _(COMING SOON)_
 
