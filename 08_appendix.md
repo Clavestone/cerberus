@@ -18,9 +18,9 @@ For that reason, the Appendix is very long. To help find what you're looking for
 
 ## Contents
 
-* 1: **[Cerberus Background](#1.-Cerberus-Background)**
-  * 1.1. [The Team Behind Cerberus](#1.1.-The-Team-Behind-Cerberus)
-  * 1.2. [Project Origins](#1.2.-Project-Origins)
+* 1: **[Cerberus Background](#1.-cerberus-background)**
+  * 1.1. [The Team Behind Cerberus](#1.1.-the-team-behind-cerberus)
+  * 1.2. [Project Origins](#1.2.-project-origins)
 * 2: **[Basic Bitcoin Security Principles](#2.-Basic-Bitcoin-Security-Principles)**
   * 2.1. [There is No Perfect Security](#2.-Basic-Bitcoin-Security-Principles)
   * 2.2. [Technology & Processes](#2.2.-Technology-&-Processes)
