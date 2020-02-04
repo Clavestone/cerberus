@@ -165,7 +165,7 @@ Internal threats that faced by corporate bitcoin storage _only_:
 - Inside jobs
 - Terminations
 
-Of all the internal threats, **inside jobs** are particularly pernicious because they can be impossible to distinguish from a successful external attack. An employee secretly sending his organisation's bitcoin holdings to an address he controls can claim that he was hacked and it is difficult to impossible for any anyone else to tell otherwise (unless he turns up to work in a Lamborgini the next day!).
+Of all the internal threats, **inside jobs** are particularly pernicious because they can be impossible to distinguish from a successful external attack. An employee secretly sending his organisation's bitcoin holdings to an address he controls can claim that he was hacked and it is difficult to impossible for any anyone else to tell otherwise (unless he turns up to work in a Lamborghini the next day!).
 
 **Inside jobs in corporate bitcoin storage come with signficant _plausible deniability_.**
 
