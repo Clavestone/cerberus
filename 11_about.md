@@ -30,10 +30,6 @@ Well-known wealth management and bitcoin industry veterans with a track record f
 ### ROBBERT GORRIS
 Delivers wealth management and corporate structuring services in Asia, with extensive experience in digital asset and DLT projects.
 
-![Guillaume Verbal](/assets/gverbal_circle_170px.png)
-### GUILLAUME VERBAL
-Founder of Coinwallet, China’s leading bitcoin hardware wallet reseller, and Bitcoin1212. Former lead developer of the ARK wallet.
-
 ![Neil Woodfine](/assets/nwoodfine_circle_170px.png)
 ### NEIL WOODFINE
 Working in the bitcoin industry since 2014, with experience at some of the leading startups in exchange, payments, and infrastructure.
